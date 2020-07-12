@@ -1,16 +1,23 @@
 $accent1: #FF6E9C;
 $accent2: #F9D439;
+$bannerText: #AE4559;
 
 .header {
     height: auto;
-    padding-bottom: 2px;
-    //background-color: red;
+    width: auto;
+    padding-bottom: 10px;
+    background-color: #f7f7f7;
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 1000000;
 
     a, a:link, a:active, a:visited {
         text-decoration: none;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .topbar {
@@ -33,7 +40,7 @@ $accent2: #F9D439;
         width: 80vw;
         display: grid;
         align-items: center;
-        grid-template-columns: auto auto;
+        grid-template-columns: 70px calc(80vw - 70px);
         margin: 1vh 10vw 0px 10vw;
 
         .menu {
@@ -54,6 +61,35 @@ $accent2: #F9D439;
                 &:hover {
                     border-bottom: 5px solid $accent2;
                     //color: white;
+                }
+            }
+
+            .cart {
+                display: inline-block;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 10px;
+                background-color: $accent1;
+                color: white;
+                align-items: center;
+                justify-items: center;
+                cursor: pointer;
+                transition: 0.5s;
+
+                i {
+                    font-size: 10pt;
+                    margin-right: 5px;
+                }
+
+                a, a:link, a:active, a:visited {
+                    border: none;
+                    padding: 0px;
+                    margin-left: 0px;
+                }
+
+                &:hover {
+                    background-color: $accent2;
+                    color: $bannerText;
                 }
             }
 

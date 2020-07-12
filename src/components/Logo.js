@@ -1,16 +1,20 @@
 import React, {useState} from 'react';
+import {NavLink} from 'react-router-dom';
+
 import './../style/logo.scss';
 
 function Logo() {
     const [title, setTitle] = useState('dm.');
 
     return (
-        <div class="logo"
-            //onMouseOver={() => setTitle('dunder mifflin.')}
-            //onMouseOut={() => setTitle('dm.')}
+        <NavLink to="/store/">
+            <div class="logo"
+                //onMouseOver={() => setTitle('dunder mifflin.')}
+                //onMouseOut={() => setTitle('dm.')}
             >
-            {title}
-        </div>
+                {title}
+            </div>
+        </NavLink>
     );
 }
 

@@ -22,7 +22,7 @@ $bannerText: #AE4559;
     .products {
         display: grid;
         width: 100%;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 33% 33% 33%;
         margin-top: 2vh;
 
         .singleProduct {
@@ -56,9 +56,10 @@ $bannerText: #AE4559;
 
             .buy {
                 display: grid;
-                grid-template-columns: auto auto;
+                grid-template-columns: auto auto auto;
                 align-items: center;
                 margin-top: 10px;
+                align-self: flex-end;
 
                 .add {
 
@@ -95,5 +96,11 @@ $bannerText: #AE4559;
             }
             
         }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .products {
+        grid-template-columns: auto auto;
     }
 }

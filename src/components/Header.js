@@ -10,15 +10,21 @@ export default function Header() {
         <div class="header">
             <div class="headerfixed">
             <div class="topbar">
-                use coupon <span class="code">PROMO30</span> for 30% off &hearts;
+                use coupon <span class="code">DMSALE30</span> for 30% off &hearts;
             </div>
 
             <div class="mainbar">
-                <NavLink to="/store/"><Logo /></NavLink>
+                <Logo />
                 <div class="menu">
                     <NavLink to="/store/logo">history</NavLink>
-                    <a href="/store/products">products</a>
-                    <a href="/store/sale">sale</a>
+                    <NavLink to="/store/products">products</NavLink>
+                    <NavLink to="/store/sale">sale</NavLink>
+
+                    <div class="cart">
+                    <NavLink to="/store/cart">
+                        <i class="fas fa-shopping-cart" /> $<span id="total">0.00</span>
+                    </NavLink></div>
+
                 </div>
             </div>
             </div>
