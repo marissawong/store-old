@@ -14,11 +14,11 @@ export default function Header() {
             </div>
 
             <div class="mainbar">
-                <NavLink to="/"><Logo /></NavLink>
+                <NavLink to="/store/"><Logo /></NavLink>
                 <div class="menu">
-                    <NavLink to="/logo">history</NavLink>
-                    <a href="/">products</a>
-                    <a href="/">sale</a>
+                    <NavLink to="/store/logo">history</NavLink>
+                    <a href="/store/products">products</a>
+                    <a href="/store/sale">sale</a>
                 </div>
             </div>
             </div>
