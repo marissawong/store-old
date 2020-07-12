@@ -1,0 +1,54 @@
+$accent1: #FF6E9C;
+$accent2: #F9D439;
+$bannerText: #AE4559;
+
+.home {
+
+    font-family: 'Work Sans', sans-serif;
+
+    .banner {
+        width: calc(100% - 1vw);
+        display: grid;
+        grid-template-columns: 70% 30%;
+        column-gap: 1vw;
+
+        .text {
+        background-color: $accent2;
+        padding-top: calc(3vw + 50px);
+        padding-bottom: 3vw;
+        padding-left: 3vw;
+        align-items: flex-end;
+        color: $bannerText;
+        font-weight: 600;
+        font-size: calc(20pt + 1vw);
+        line-height: calc(20pt + 1.2vw);
+        }
+
+        .company {
+            background-color: $bannerText;
+            color: white;
+            padding: 2.5vw;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            font-size: calc(3pt + 1vw);
+            line-height: calc(10pt + 1vw);
+
+            .name {
+                font-family: 'Roboto Slab', serif;
+                font-weight: 800;
+                font-size: calc(7pt + 1vw);
+                margin-bottom: 0px;
+            }
+
+            .description {
+                margin: 0px;
+
+                span.email {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+}

@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Header from './components/Header';
-import Logo from './components/Logo';
+import Home from './components/Home';
+
+import './style/app.css';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
     <div>
       <Header />
       <Switch>
-        <Route path="/logo" component={Logo}/>
+        <div class="content">
+          <Route path="/" component={Home} exact/>
+        </div>
       </Switch>
     </div>
     </BrowserRouter>

@@ -8,19 +8,20 @@ import './../style/header.scss';
 export default function Header() {
     return (
         <div class="header">
+            <div class="headerfixed">
             <div class="topbar">
                 use coupon <span class="code">PROMO30</span> for 30% off &hearts;
             </div>
 
             <div class="mainbar">
-                <Logo />
+                <NavLink to="/"><Logo /></NavLink>
                 <div class="menu">
                     <NavLink to="/logo">history</NavLink>
                     <a href="/">products</a>
                     <a href="/">sale</a>
                 </div>
             </div>
-
+            </div>
         </div>
     );
 }

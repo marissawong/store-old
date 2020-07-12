@@ -9,6 +9,10 @@ $accent2: #F9D439;
     top: 0px;
     left: 0px;
 
+    a, a:link, a:active, a:visited {
+        text-decoration: none;
+    }
+
     .topbar {
         background-color: $accent1;
         width: 100vw;
@@ -30,8 +34,7 @@ $accent2: #F9D439;
         display: grid;
         align-items: center;
         grid-template-columns: auto auto;
-        margin-left: 10vw;
-        margin-top: 1vh;
+        margin: 1vh 10vw 0px 10vw;
 
         .menu {
             text-align: right;
