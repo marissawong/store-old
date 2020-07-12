@@ -1,5 +1,8 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
+
 import Logo from './Logo';
+
 import './../style/header.scss';
 
 export default function Header() {
@@ -12,7 +15,7 @@ export default function Header() {
             <div class="mainbar">
                 <Logo />
                 <div class="menu">
-                    <a href="/">history</a>
+                    <NavLink to="/logo">history</NavLink>
                     <a href="/">products</a>
                     <a href="/">sale</a>
                 </div>
