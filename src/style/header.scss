@@ -1,0 +1,59 @@
+$accent1: #FF6E9C;
+$accent2: #F9D439;
+
+.header {
+    height: auto;
+    padding-bottom: 2px;
+    //background-color: red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    .topbar {
+        background-color: $accent1;
+        width: 100vw;
+        padding: 5px 0px 5px 0px;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 10pt;
+        text-align: center;
+        letter-spacing: 0.5pt;
+
+        span.code {
+            font-weight: 900;
+        }
+
+    }
+
+    .mainbar {
+        width: 80vw;
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto;
+        margin-left: 10vw;
+        margin-top: 1vh;
+
+        .menu {
+            text-align: right;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 12pt;
+            text-transform: lowercase;
+
+            a, a:link, a:active, a:visited {
+                text-decoration: none;
+                color: #4b4b4b;
+                margin-left: 20px;
+                letter-spacing: 1px;
+                transition: ease 0.5s;
+                padding: 5px 10px 5px 10px;
+                border-bottom: 5px solid transparent;
+
+                &:hover {
+                    border-bottom: 5px solid $accent2;
+                    //color: white;
+                }
+            }
+
+        }
+    }
+}

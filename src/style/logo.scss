@@ -1,0 +1,26 @@
+$accent1: #FF6E9C;
+$accent2: #F9D439;
+
+.logo {
+    background-color: $accent1;
+    width: 70px;
+    height: 70px;
+    //border-radius: 80px;
+    justify-items: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    cursor: pointer;
+    display: grid;
+    overflow-x: visible;
+    color: $accent2;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18pt;
+    font-weight: 800;
+    letter-spacing: 1pt;
+
+    &:hover {
+        color: white;
+        //background-color: transparent;
+    }
+}
